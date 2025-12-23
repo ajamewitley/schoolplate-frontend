@@ -9,15 +9,15 @@ const HeroSection = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/hero2.jpeg"
+          src="/n3.jpg"
           alt="Cameroonian students sharing a meal together"
           width={1200}
-          quality={100}
+          quality={75}
           height={800}
           priority
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-linear-to-r from-accent-foreground/90 via-accent-foreground/70 to-accent-foreground/40" />
+        <div className="absolute inset-0 bg-linear-to-r from-accent-foreground/90 via-accent-foreground/20 to-accent-foreground/20" />
       </div>
 
       {/* Content */}
@@ -33,20 +33,20 @@ const HeroSection = () => {
             <span className="text-amber">One Meal at a Time</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 leading-relaxed animate-fadeUp" style={{ animationDelay: "0.2s" }}>
+          <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed animate-fadeUp" style={{ animationDelay: "0.2s" }}>
             Many students attend classes on empty stomach. Sponsor meals for university students across Cameroon through our
             partner restaurants — every donation is converted directly into a plate of food.<br />Help them focus on education, not hunger.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fadeUp" style={{ animationDelay: "0.3s" }}>
-            <Button variant="hero" size="lg" className="group" asChild>
+            <Button variant="hero" size="lg" className="" asChild>
               <Link href="#">
                 Sponsor a Student
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
             <Button variant="hero-outline" size="lg" asChild>
-              <Link href="#how-it-works">Learn How it Works</Link>
+              <Link href="/auth">I'm a Student</Link>
             </Button>
           </div>
 

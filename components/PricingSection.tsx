@@ -24,7 +24,7 @@ const plans = [
     period: "per week",
     description: "Feed a student for an entire week",
     features: [
-      "7 plates per week",
+      "5 plates per week",
       "Choose your student",
       "Become the parent",
       "Weekly photo updates",

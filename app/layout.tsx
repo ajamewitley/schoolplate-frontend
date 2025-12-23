@@ -44,7 +44,7 @@ export default function RootLayout({
         className={
           `
           ${combo.heading.variable}  ${combo.body.variable}
-          antialiased m-3 sm:m-3
+          antialiased
           `}
       >
         <ThemeProvider
