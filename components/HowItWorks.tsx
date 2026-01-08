@@ -1,25 +1,28 @@
-import { Search, CreditCard, Store, Utensils } from "lucide-react";
+import { Search, CreditCard, Store, Utensils } from 'lucide-react';
 
 const steps = [
   {
     icon: Search,
-    title: "Browse Students",
-    description: "Explore profiles of university students from across Cameroon. Filter by university, field of study, or need level.",
+    title: 'Browse Students',
+    description:
+      'Explore profiles of university students from across Cameroon. Filter by university, field of study, or need level.',
   },
   {
     icon: CreditCard,
-    title: "Choose Your Plan",
-    description: "Select a sponsorship plan that fits your budget — daily, weekly, or monthly meals. Your donation goes directly to partner restaurants.",
+    title: 'Choose Your Plan',
+    description:
+      'Select a sponsorship plan that fits your budget — daily, weekly, or monthly meals. Your donation goes directly to partner restaurants.',
   },
   {
     icon: Store,
-    title: "Restaurant Receives Payment",
-    description: "We partner with trusted restaurants near each university. Your sponsorship is credited to the student's meal account.",
+    title: 'Restaurant Receives Payment',
+    description:
+      "We partner with trusted restaurants near each university. Your sponsorship is credited to the student's meal account.",
   },
   {
     icon: Utensils,
-    title: "Student consumes the Meal",
-    description: "Sponsored students visit partner restaurants and consume their plates",
+    title: 'Student consumes the Meal',
+    description: 'Sponsored students visit partner restaurants and consume their plates',
   },
 ];
 
@@ -28,7 +31,9 @@ const HowItWorks = () => {
     <section id="how-it-works" className="py-20 md:py-32 bg-card">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-amber font-semibold text-sm uppercase tracking-wider">Simple Process</span>
+          <span className="text-amber font-semibold text-sm uppercase tracking-wider">
+            Simple Process
+          </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground mt-4 mb-6">
             How SchoolPlate Works
           </h2>
@@ -39,10 +44,7 @@ const HowItWorks = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
           {steps.map((step, index) => (
-            <div
-              key={index}
-              className="relative group"
-            >
+            <div key={index} className="relative group">
               {/* Connector Line */}
               {index < steps.length - 1 && (
                 <div className="hidden md:block absolute top-16 left-[60%] w-full h-0.5 bg-border" />
