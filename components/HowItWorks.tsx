@@ -47,7 +47,7 @@ const HowItWorks = () => {
             <div key={index} className="relative group">
               {/* Connector Line */}
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-16 left-[60%] w-full h-0.5 bg-border" />
+                <div className="hidden lg:block absolute top-16 left-[60%] w-full h-0.5 bg-border" />
               )}
 
               <div className="relative bg-background rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 group-hover:-translate-y-2">
