@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Heart } from "lucide-react";
-import Link from "next/link";
+import { Button } from '@/components/ui/button';
+import { ArrowRight, Heart } from 'lucide-react';
+import Link from 'next/link';
 
 const CTASection = () => {
   return (
@@ -14,7 +14,9 @@ const CTASection = () => {
           <div className="relative">
             <div className="inline-flex items-center gap-2 bg-primary-foreground/10 rounded-full px-8 py-2 mb-6">
               <Heart className="w-6 h-6 text-amber animate-pulse" fill="currentColor" />
-              <span className="text-sm text-primary-foreground">Join 50+ Donors Making a Difference</span>
+              <span className="text-sm text-primary-foreground">
+                Join 50+ Donors Making a Difference
+              </span>
             </div>
 
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-primary-foreground mb-6">
@@ -22,19 +24,19 @@ const CTASection = () => {
             </h2>
 
             <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Your sponsorship goes to partner restaurants where students redeem these plates.
-              No cash to students — just guaranteed nutrition fueling their dreams.
+              Your sponsorship goes to partner restaurants where students redeem these plates. No
+              cash to students — just guaranteed nutrition fueling their dreams.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="lg" className="group" asChild>
-              <Link href="#">
-                Start Sponsoring
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </Button>
+                <Link href="/auth">
+                  Start Sponsoring
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
               <Button variant="hero-outline" size="xl" asChild>
-                <Link href="#">Contact Us</Link>
+                <Link href="/contact">Contact Us</Link>
               </Button>
             </div>
           </div>
