@@ -3,12 +3,22 @@
 import { FloatingLabel } from 'flowbite-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
 import { Button } from '../ui/button';
+import { useState } from 'react';
 
 const SponsorForm = () => {
+  const [err, setErr] = useState(false);
+  const handleSubmit = (e: any) => {
+    if (!(document.getElementById('email')?.value || document.getElementById('number')?.value)) {
+      e.preventDefault();
+      setErr(true);
+    } else {
+      setErr(false);
+    }
+  };
+
   return (
     <form action="GET" className="space-y-4">
-      <FloatingLabel variant="outlined" type="text" label="Company / Organization Name" required />
-      <FloatingLabel variant="outlined" type="text" label="Contact Person" required />
+      <FloatingLabel variant="outlined" type="text" label="Name / Organization Name" />
       <Select name="interest" required>
         <SelectTrigger>
           <SelectValue placeholder="Area of interest" />
@@ -35,7 +45,6 @@ const SponsorForm = () => {
           rows={3}
           className="block peer p-3 w-full text-sm text-gray-900 bg-transparent rounded-lg border border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 placeholder-transparent"
           placeholder=" "
-          required
         ></textarea>
         <label
           htmlFor="message"
@@ -44,8 +53,26 @@ const SponsorForm = () => {
           Your message
         </label>
       </div>
-      <FloatingLabel variant="outlined" type="email" label="Email Address" required />
-      <Button variant="default" type="submit" className="w-full cursor-pointer">
+      <FloatingLabel id="email" variant="outlined" type="email" label="Email Address" />
+      <FloatingLabel
+        id="number"
+        variant="outlined"
+        type="tel"
+        label="Phone or WhatsApp"
+        maxLength={9}
+        minLength={9}
+        inputMode="numeric"
+        pattern="[0-9]*"
+      />
+      <p hidden={!err} className="px-2 mb-4 text-xs text-red-500 dark:text-red-400">
+        Please provide an email-address or a number (Phone or WhatsApp).
+      </p>
+      <Button
+        variant="default"
+        type="submit"
+        onClick={handleSubmit}
+        className="w-full cursor-pointer"
+      >
         Request Information
       </Button>
     </form>

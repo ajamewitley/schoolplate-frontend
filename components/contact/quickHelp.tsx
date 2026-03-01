@@ -4,7 +4,7 @@ import { FaBolt, FaWhatsapp } from 'react-icons/fa';
 
 const QuickHelp = () => {
   return (
-    <section id="quick-help" className="py-16 px-6 lg:py-20">
+    <section id="quick-help" className="py-16 px-2 lg:py-20">
       <div className="max-w-3xl mx-auto bg-destructive/10 border border-destructive/50 rounded-2xl p-8 text-center">
         <h2 className="text-2xl font-bold text-secondary mb-3">Quick Help</h2>
         <p className="mb-6">
@@ -16,14 +16,17 @@ const QuickHelp = () => {
           <a href="tel:+237671668564">
             <Button
               variant="outline"
-              className="w-full text-foreground border-foreground hover:bg-foreground hover:text-background cursor-pointer"
+              className="w-full text-foreground border-foreground hover:bg-foreground hover:text-background active:bg-foreground active:text-background cursor-pointer"
             >
               <Phone className="shrink-0" />
               Call
             </Button>
           </a>
           <a href="https://wa.me/237671668564">
-            <Button variant="outline" className="w-full cursor-pointer">
+            <Button
+              variant="outline"
+              className="w-full active:bg-primary active:text-primary-foreground cursor-pointer"
+            >
               <FaWhatsapp className="shrink-0" />
               WhatsApp
             </Button>
@@ -31,7 +34,7 @@ const QuickHelp = () => {
           <a href="mailto:darius38130@gmail.com">
             <Button
               variant="outline"
-              className="w-full text-amber border-amber hover:bg-amber hover:text-foreground cursor-pointer"
+              className="w-full text-amber border-amber hover:bg-amber hover:text-foreground active:bg-amber active:text-foreground cursor-pointer"
             >
               <Mail className="shrink-0" />
               Mail
@@ -39,7 +42,7 @@ const QuickHelp = () => {
           </a>
         </div>
 
-        <p className="mt-6 flex gap-3 justify-center">
+        <p className="mt-6 text-sm sm:text-md flex gap-1 sm:gap-3 justify-center">
           <FaBolt className="text-amber shrink-0" />
           Response time: Under 2 hours
         </p>

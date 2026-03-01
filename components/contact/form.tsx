@@ -9,7 +9,7 @@ import { RefObject } from 'react';
 const Form = ({ tabsRef }: { tabsRef: RefObject<TabsRef | null> }) => {
   return (
     <section id="support" className="py-16 lg:py-20">
-      <div className="max-w-xl mx-auto px-6">
+      <div className="max-w-xl mx-auto px-2">
         <h2 className="text-3xl font-bold text-center mb-6">Support</h2>
 
         <Tabs
@@ -33,7 +33,7 @@ const Form = ({ tabsRef }: { tabsRef: RefObject<TabsRef | null> }) => {
           </TabItem>
           <TabItem title="Sponsor Info">
             <p className="text-center text-gray-500 mb-4 mt-2">
-              Learn how your organization can support students through feeding.
+              Learn how you or your organization can support students through feeding.
             </p>
             <SponsorForm />
           </TabItem>

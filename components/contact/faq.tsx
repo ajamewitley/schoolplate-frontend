@@ -3,7 +3,7 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '..
 const FAQ = () => {
   return (
     <section id="faq" className="py-16 lg:py-20 bg-card">
-      <div className="max-w-3xl mx-auto px-6">
+      <div className="max-w-3xl mx-auto px-2">
         <h2 className="text-2xl font-bold text-center mb-10">Frequently Asked Questions</h2>
         <Accordion type="single" collapsible className="border rounded-xl">
           <AccordionItem value="faq-1">

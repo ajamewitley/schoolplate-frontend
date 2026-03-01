@@ -1,12 +1,11 @@
 import { Clock, Mail, MapPin, Phone } from 'lucide-react';
-import { FaBolt } from 'react-icons/fa';
 
 const Map = () => {
   return (
     <section id="map" className="py-16 lg:py-20 bg-card">
       <h2 className="text-3xl text-primary text-center font-bold mb-6">Our Office</h2>
       <div className="grid lg:grid-cols-3 gap-10 items-center">
-        <div className="px-6">
+        <div className="px-4">
           <ul className="space-y-3 lg:space-y-5">
             <li className="flex gap-3">
               <MapPin className="text-amber shrink-0" />
