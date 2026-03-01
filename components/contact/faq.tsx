@@ -1,4 +1,3 @@
-import { FaChevronDown } from 'react-icons/fa';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '../ui/accordion';
 
 const FAQ = () => {
@@ -6,7 +5,7 @@ const FAQ = () => {
     <section id="faq" className="py-16 lg:py-20 bg-card">
       <div className="max-w-3xl mx-auto px-6">
         <h2 className="text-2xl font-bold text-center mb-10">Frequently Asked Questions</h2>
-        <Accordion type="multiple" className="border rounded-xl">
+        <Accordion type="single" collapsible className="border rounded-xl">
           <AccordionItem value="faq-1">
             <AccordionTrigger className="font-bold text-lg p-5">
               How do students receive meals?

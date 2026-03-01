@@ -13,24 +13,30 @@ const QuickHelp = () => {
           Contact our support team through any of the methods below.
         </p>
         <div className="grid sm:grid-cols-3 justify-center gap-4">
-          <Button
-            variant="outline"
-            className="text-foreground border-foreground hover:bg-foreground hover:text-background cursor-pointer"
-          >
-            <Phone className="shrink-0" />
-            Call
-          </Button>
-          <Button variant="outline" className="cursor-pointer">
-            <FaWhatsapp className="shrink-0" />
-            WhatsApp
-          </Button>
-          <Button
-            variant="outline"
-            className="text-amber border-amber hover:bg-amber hover:text-foreground cursor-pointer"
-          >
-            <Mail className="shrink-0" />
-            Mail
-          </Button>
+          <a href="tel:+237671668564">
+            <Button
+              variant="outline"
+              className="w-full text-foreground border-foreground hover:bg-foreground hover:text-background cursor-pointer"
+            >
+              <Phone className="shrink-0" />
+              Call
+            </Button>
+          </a>
+          <a href="https://wa.me/237671668564">
+            <Button variant="outline" className="w-full cursor-pointer">
+              <FaWhatsapp className="shrink-0" />
+              WhatsApp
+            </Button>
+          </a>
+          <a href="mailto:darius38130@gmail.com">
+            <Button
+              variant="outline"
+              className="w-full text-amber border-amber hover:bg-amber hover:text-foreground cursor-pointer"
+            >
+              <Mail className="shrink-0" />
+              Mail
+            </Button>
+          </a>
         </div>
 
         <p className="mt-6 flex gap-3 justify-center">

@@ -44,13 +44,17 @@ const RestaurantForm = () => {
           Your question
         </label>
       </div>
-      <FloatingLabel variant="outlined" type="tel" label="Phone or WhatsApp" required />
-      <Button
-        variant="default"
-        type="submit"
-        onClick={(e) => e.preventDefault()}
-        className="w-full cursor-pointer"
-      >
+      <FloatingLabel
+        variant="outlined"
+        type="tel"
+        label="Phone or WhatsApp"
+        maxLength={9}
+        minLength={9}
+        inputMode="numeric"
+        pattern="[0-9]*"
+        required
+      />
+      <Button variant="default" type="submit" className="w-full cursor-pointer">
         Send Inquiry
       </Button>
     </form>

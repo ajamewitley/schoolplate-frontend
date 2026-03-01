@@ -14,11 +14,11 @@ const Map = () => {
             </li>
             <li className="flex gap-3">
               <Phone className="text-amber shrink-0" />
-              Phone: +237 6 81 24 87 24
+              Phone: +237 6 71 66 85 64
             </li>
             <li className="flex gap-3">
               <Mail className="text-amber shrink-0" />
-              Email: support@schoolplate.cm
+              Email: darius38130@gmail.com
             </li>
             <li className="flex gap-3">
               <Clock className="text-amber shrink-0" />

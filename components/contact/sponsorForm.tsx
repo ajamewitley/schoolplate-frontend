@@ -45,12 +45,7 @@ const SponsorForm = () => {
         </label>
       </div>
       <FloatingLabel variant="outlined" type="email" label="Email Address" required />
-      <Button
-        variant="default"
-        type="submit"
-        onClick={(e) => e.preventDefault()}
-        className="w-full cursor-pointer"
-      >
+      <Button variant="default" type="submit" className="w-full cursor-pointer">
         Request Information
       </Button>
     </form>
