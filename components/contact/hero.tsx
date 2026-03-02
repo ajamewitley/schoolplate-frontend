@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { TabsRef } from 'flowbite-react';
 import { RefObject } from 'react';
-import Link from 'next/link';
 
 const Hero = ({ tabsRef }: { tabsRef: RefObject<TabsRef | null> }) => {
   const handleClick = (id: number) => {

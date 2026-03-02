@@ -22,7 +22,7 @@ const QuickHelp = () => {
               Call
             </Button>
           </a>
-          <a href="https://wa.me/237671668564">
+          <a href="https://wa.me/237671668564" target="_blank" rel="noopener noreferrer">
             <Button
               variant="outline"
               className="w-full active:bg-primary active:text-primary-foreground cursor-pointer"

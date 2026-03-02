@@ -6,7 +6,7 @@ import { Button } from '../ui/button';
 
 const RestaurantForm = () => {
   return (
-    <form action="GET" className="space-y-4">
+    <form className="space-y-4">
       <Select name="interest" required>
         <SelectTrigger>
           <SelectValue placeholder="What would you like to know?" />
@@ -36,15 +36,15 @@ const RestaurantForm = () => {
         ></textarea>
         <label
           htmlFor="message"
-          className="absolute px-2 text-sm text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-900 transform duration-300 -translate-y-6 scale-75 top-4 z-10 origin-[0] start-1 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
+          className="absolute px-2 text-sm text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-900 transform duration-300 -translate-y-6 scale-75 top-4 z-10 origin-left start-1 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
         >
-          Your message
+          Optional message
         </label>
       </div>
       <FloatingLabel
         variant="outlined"
         type="tel"
-        label="Phone or WhatsApp"
+        label="WhatsApp"
         maxLength={9}
         minLength={9}
         inputMode="numeric"
