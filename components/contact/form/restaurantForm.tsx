@@ -1,8 +1,8 @@
 'use client';
 
 import { FloatingLabel } from 'flowbite-react';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
-import { Button } from '../ui/button';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../ui/select';
+import { Button } from '../../ui/button';
 
 const RestaurantForm = () => {
   return (

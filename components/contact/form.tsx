@@ -1,9 +1,9 @@
 'use client';
 
 import { TabItem, Tabs, TabsRef } from 'flowbite-react';
-import RestaurantForm from './restaurantForm';
-import SponsorForm from './sponsorForm';
-import StudentForm from './studentForm';
+import RestaurantForm from './form/restaurantForm';
+import SponsorForm from './form/sponsorForm';
+import StudentForm from './form/studentForm';
 import { RefObject } from 'react';
 
 const Form = ({ tabsRef }: { tabsRef: RefObject<TabsRef | null> }) => {
